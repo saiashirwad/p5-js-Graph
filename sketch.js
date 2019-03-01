@@ -4,14 +4,39 @@ function preload() {
 
 }
 
-n = new Node(100, 100, "hi there");
 
 function setup() {
 	createCanvas(1000, 1000);
-	background(255);
+	localStorage.clear();
+	g = new Graph();
+
+	g.addNode(100, 100, "hey");
+	g.addNode(300, 250, "new node");
+	g.addNode(340, 200, "hey there");
+
+
 }
 
 function draw() {
-	smooth();
-	n.draw();
+	background(255);
+
+	// smooth();
+	g.draw();
 }
+
+function mousePressed() {
+	g.mousePressed();
+}
+
+function mouseDragged() {
+	g.mouseDragged();
+}
+
+function mouseReleased() {
+	g.mouseReleased();
+}
+
+// function displayText(s) {
+// 	// console.log("hey");
+// 	text("hey", 50, 300);
+// }
