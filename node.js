@@ -16,7 +16,7 @@ class Node {
 
 	draw() {
 		this.onHover();
-		// noStroke();
+		noStroke();
 		fill(this.color);
 		circle(this.x, this.y, this.radius);
 

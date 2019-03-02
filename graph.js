@@ -7,6 +7,7 @@ class Graph {
 	}
 
 	addNode(x = width/2, y = height/2, t) {
+		console.log(t);
 		// let id = getRandomId(5);
 		let id = this.nodes.length;
 		let node = new Node(x, y, t, id);

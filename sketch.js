@@ -66,5 +66,5 @@ function addRelationship() {
 }
 
 function addNode() {
-	g.addNode(t=newNode.value());
+	g.addNode(width/2, height/2, newNode.value());
 }
